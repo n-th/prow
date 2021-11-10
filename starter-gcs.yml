@@ -69,11 +69,11 @@ data:
 
     plank:
       job_url_prefix_config:
-        "*": https://prow.n-th.site/view/
+        "*": http://34.117.88.175/view/
       report_templates:
         '*': >-
-            [Full PR test history](https://prow.n-th.site/pr-history?org={{.Spec.Refs.Org}}&repo={{.Spec.Refs.Repo}}&pr={{with index .Spec.Refs.Pulls 0}}{{.Number}}{{end}}).
-            [Your PR dashboard](https://prow.n-th.site/pr?query=is:pr+state:open+author:{{with
+            [Full PR test history](http://34.117.88.175/pr-history?org={{.Spec.Refs.Org}}&repo={{.Spec.Refs.Repo}}&pr={{with index .Spec.Refs.Pulls 0}}{{.Number}}{{end}}).
+            [Your PR dashboard](http://34.117.88.175/pr?query=is:pr+state:open+author:{{with
             index .Spec.Refs.Pulls 0}}{{.Author}}{{end}}).
       default_decoration_configs:
         "*":
